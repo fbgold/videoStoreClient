@@ -1,0 +1,41 @@
+
+
+<div class="container">
+    <div class="tableBox">
+        <table class="table  table-bordered table-striped">
+            <tr class="text-center ">
+                <th>Store id</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip</th>
+                <th>Country</th>
+                <th>Phone</th>
+                <th>Manager</th>
+                <th></th>
+            </tr>
+            <tbody>
+                {{#each Result as |store|}}
+                <tr>
+                    <td style="width:20px;">{{store.store_id}}</td>
+                    <td>{{Address.address}}</td>
+                    <td>{{Address.City.city}}</td>
+                    <td>{{Address.district}}</td>
+                    <td>{{Address.postal_code}}</td>
+                    <td>{{Address.City.Country.country}}</td>
+                    <td>{{Address.phone}}</td>
+                    <td>{{store.Manager.first_name}} {{store.Manager.last_name}}</td>
+                    <td class="align-middle">
+                        <a href="/video/editStore/{{store.store_id}}">
+                        <i class="fa fa-pencil fa-lg" aria-hidden="true"></i></a>
+
+                        <a  href=""  onclick="return confirm('Are you sure?');">
+                        <i class="fa fa-trash fa-lg" style="top:50%, left:50%" aria-hidden="true"></i></a>
+                    </td>
+
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>

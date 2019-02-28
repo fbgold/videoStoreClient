@@ -1,0 +1,24 @@
+body{
+    margin:0; padding:0; height:85% 
+}
+
+.jumbotron {
+    background: #5c6780;
+    min-height: 200px;
+    background-image: url("/img/filmStrip_1.jpg");
+    background-size: cover;
+    color: rgb(240, 244, 248);
+    margin:0;
+    padding:0;
+}
+
+.scrollable{
+    margin: 0 auto; overflow:scroll; height: 400px;
+}
+
+.divScroll{
+    height:100px;
+    margin:0;
+    padding:0;
+    overflow:auto;
+}

@@ -1,0 +1,16 @@
+
+<h3>Cities</h3>
+{{#with storeData as |store|}}
+    <select class="form-control" id="sel1">
+        {{#each cities as |City|}}
+            <option>{{City.city}}</option>
+        {{/each}} 
+    </select>
+{{/with}}
+
+
+<!--
+{{#each cities as |City|}}
+    <p>{{City.city}}</p>
+{{/each}} 
+-->

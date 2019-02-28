@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap-theme.min.css"
+        integrity="sha384-jzngWsPS6op3fgRCDTESqrEJwRKck+CILhJVO5VvaAZCq8JYf8HsR/HPpBOOPZfR" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <!--
+        <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+        <link rel = "stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    -->
+
+    <title>{{viewTitle}}</title>
+</head>
+
+<body>
+    <div class="container" style="background:#A2CEF1">
+        <div class="jumbotron">
+            <div class="container ">
+                <h1 class="display-1 text-center"> Frank's Video Store</h1>
+                <p class="lead" style="margin:0; margin-left:130px; margin-right:130px; text-align: right ">34842 Bitter
+                    Root CT</p>
+                <p class="lead" style="margin:0; margin-left:130px;; margin-right:130px;text-align: right">Murrieta CA
+                    92563</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row" id="data1">
+            <!--
+            <div class="col-sm-1">
+               
+            </div>
+            -->
+            <div class="col-sm-12">
+                {{{body}}}
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+            <a class="nav-link nav-item" href="#inventory" data-toggle="tab">Inventory</a>
+            <a class="nav-link nav-item active" href="#inventory" data-toggle="tab">Rent</a>
+            <a class="nav-link nav-item" href="#stores" data-toggle="tab">Stores</a>
+            <a class="nav-link nav-item" href="#customers" data-toggle="tab">Customers</a>
+        </nav>
+        <div class="tab-content py-5">
+            <div class="tab-pane active" id="inventory">
+                <h3>Inventory</h3>
+            </div>
+            <div class="tab-pane" id="rent">
+                <h3>Rent</h3>
+            </div>
+            <div class="tab-pane" id="stores">
+                <h3>Stores</h3>
+            </div>
+            <div class="tab-pane" id="customers">
+                <h3>Customers</h3>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

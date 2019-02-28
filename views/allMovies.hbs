@@ -1,0 +1,50 @@
+<div class="tableBox">
+    <table class="table  table-bordered table-striped">
+        <!-- table-bordered -->
+
+        <tr class="text-center ">
+            <th>Film id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Actors</th>
+            <th></th>
+        </tr>
+
+
+        <tbody>
+            {{#each Result }}
+            <tr>
+                {{#with this as |movie|}}
+                <td class="align-middle" style="width:20px; color: white">{{movie.film_id}}</td>
+                <td class="align-middle" style="width:200px;">{{movie.title}}</td>
+                <td class="align-middle" style="width:400px;">{{movie.description}}</td>
+
+                <td class="text-left align-middle">
+                    {{#each movie.Category as |cat|}}
+                    {{cat.name}}
+                    {{/each}}
+
+                </td>
+                <td class="text-left">
+                    <div class="divScroll">
+                        <ul>
+                            {{#each movie.Actors as |actor|}}
+                            <li>
+                                {{actor.first_name}} {{actor.last_name}}
+                            </li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </td>
+                <td class="align-middle">
+                    <a  href=""  onclick="return confirm('Are you sure?');">
+                    <i class="fa fa-trash fa-lg" style="top:50%, left:50%" aria-hidden="true"></i></a>
+                </td>
+
+                {{/with}}
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

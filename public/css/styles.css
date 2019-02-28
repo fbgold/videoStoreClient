@@ -1,0 +1,57 @@
+body{
+    margin:0; padding:0; height:100% 
+}
+
+.container{
+    background: #A2CEF1;
+
+}
+.jumbotron {
+    background: #A2CEF1;
+    max-height: 150px;
+    background-image: url("/img/filmStrip_1.jpg");
+    background-size: cover;
+    color: rgb(240, 244, 248);
+    margin:0;
+    padding:0;
+}
+
+.tableBox{
+    margin: 0 auto;  
+    margin: 0; 
+    padding:0;
+    overflow-y:scroll; 
+    height: 450px;
+ /*   box-shadow:0 10px 100px rgba(33, 36, 36, 0.7);  */
+    box-shadow:0 10px 1000px rgba(33, 36, 36, 0.7);
+    background: #A2CEF1
+}
+
+table, th, td{
+    border: 1px solid #a5adb1;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #00356B;
+    /* must have these two lines for sticky to work */
+    position: sticky;
+    top:0;
+    color:white;
+}
+
+tr th:nth-child(1){
+    background:#A2CEF1;
+}
+
+tr td:nth-child(1){
+    background:#00356B;
+    color:white;
+}
+
+.divScroll{
+    height:100px;
+    margin:0;
+    padding:0;
+    overflow:auto;
+}

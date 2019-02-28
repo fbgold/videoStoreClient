@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="/js/videoJs.js"></script>
+    <title>{{viewTitle}}</title>
+</head>
+
+<body>
+    <div class="container" style="background:#A2CEF1">
+        <div class="jumbotron align-text-top">
+        <!--    <h1 class="display-1 text-center align-top"> Frank's Video Store</h1>   -->
+            <h1 class="display-5 text-center "> Frank's Video Store</h1>
+            <p class="lead" style="margin:0; margin-left:130px; margin-right:130px; text-align: right ">34842 Bitter
+                Root CT</p>
+            <p class="lead" style="margin:0; margin-left:130px;; margin-right:130px;text-align: right">Murrieta CA
+                92563</p>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row" id="data1">
+            <div class="col-sm-12">
+                {{{body}}}
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+            <a class="nav-link active" href="/video/allMovies" >Inventory</a>
+            <a class="nav-link" href="" data-toggle="tab">Rent</a>
+            <a class="nav-link" href="/video/store/0">Stores</a>
+            <a class="nav-link" href="#staff" data-toggle="tab">Staff</a>
+            <a class="nav-link nav-item" href="#customers" data-toggle="tab">Customers</a>
+        </nav>
+
+        <!--
+        <div class="tab-content py-5">
+            <div class="tab-pane active" id="inventory">
+                <h3>Inventory</h3>
+            </div>
+            <div class="tab-pane" id="rent">
+                <h3>Rent</h3>
+            </div>
+            <div class="tab-pane" id="stores">
+                <h3>Stores</h3>
+            </div>
+            <div class="tab-pane" id="staff">
+                <h3>Staff</h3>
+            </div>
+            <div class="tab-pane" id="customers">
+                <h3>Customers</h3>
+            </div>
+        </div>
+        -->
+    </div>
+</body>
+
+</html>
