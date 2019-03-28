@@ -1,4 +1,6 @@
-const port = 3030;
+//const port = 3030;
+const port = process.env.PORT || 3030;
+
 const express = require('express');
 const expbs = require('express-handlebars');
 const path = require('path');
@@ -53,5 +55,5 @@ const videoController = require('./controllers/videoController.js');
 app.use('/video',videoController);
 
 app.listen(port,()=>{
-    console.log('*Video started on port:' + port);
+    console.log('*Video Client started on port:' + port);
 })
