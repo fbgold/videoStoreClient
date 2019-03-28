@@ -12,7 +12,7 @@ router.post('/', (req, res) => {
     var options = {
         method: 'POST',
         //uri: "http://localhost:4040/video/updateStore/",
-        uri = awsUrl + 'updateStore/',
+        uri : awsUrl + 'updateStore/',
         
         body: {
             storeInfo: body
@@ -50,7 +50,7 @@ function getMovieData(res,url,page){
 router.get('/allMovies', (req, res) => {
     let page = "allMovies";
     //let url = "http://localhost:4040/video/0";
-    let url = awsUrl + 'updateStore/';
+    let url = awsUrl + '0';
 
     getResultFromDB(url,page,res);
 });
